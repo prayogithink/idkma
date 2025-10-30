@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Teacher Schedule</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    margin: 0;
+    padding: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    background-color: #fff;
+  }
+
+  th, td {
+    padding: 12px 15px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 600;
+  }
+
+  tr:nth-child(even) td {
+    background-color: #f9f9f9;
+  }
+
+  tr:hover td {
+    background-color: #e0f7fa;
+    transition: 0.3s;
+  }
+
+  /* Teacher color-coding */
+  td.NSC { background-color: #FFCDD2; }
+  td.AKS { background-color: #F8BBD0; }
+  td.SK  { background-color: #E1BEE7; }
+  td.MJT { background-color: #D1C4E9; }
+  td.PD  { background-color: #C5CAE9; }
+  td.UBL { background-color: #BBDEFB; }
+  td.ND  { background-color: #B2EBF2; }
+  td.RL  { background-color: #B2DFDB; }
+  td.RP  { background-color: #C8E6C9; }
+  td.NK  { background-color: #DCEDC8; }
+  td.SN  { background-color: #F0F4C3; }
+  td.SC  { background-color: #FFF9C4; }
+  td.AKY { background-color: #FFECB3; }
+  td.JP  { background-color: #FFE0B2; }
+  td.JNS { background-color: #FFCCBC; }
+  td.TK  { background-color: #D7CCC8; }
+  td.SNM { background-color: #CFD8DC; }
+  td.SBZ { background-color: #F5F5F5; }
+  td.GS  { background-color: #F0F0F0; }
+  td.SNC { background-color: #E8F5E9; }
+  td.AS  { background-color: #FFF3E0; }
+  td.AKM { background-color: #FFEBEE; }
+  td.MD  { background-color: #EDE7F6; }
+  td.KLB { background-color: #D1C4E9; }
+
+  td.Break {
+    background-color: #FFD54F;
+    font-weight: bold;
+    color: #333;
+  }
+
+  td.Practical {
+    background-color: #9575CD;
+    color: white;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<h2>📚 Weekly Teacher Schedule</h2>
+
+<table>
+  <tr>
+    <th>Day</th>
+    <th>1st</th>
+    <th>2nd</th>
+    <th>3rd</th>
+    <th>Break</th>
+    <th>4th</th>
+    <th>5th</th>
+    <th>6th</th>
+    <th>7th</th>
+  </tr>
+  <tr>
+    <td><strong>Sunday</strong></td>
+    <td class="NSC">NSC</td>
+    <td class="AKS">AKS</td>
+    <td class="SK">SK</td>
+    <td class="Break">Break</td>
+    <td class="MJT">MJT</td>
+    <td class="PD">PD</td>
+    <td class="UBL">UBL</td>
+    <td class="ND">ND</td>
+  </tr>
+  <tr>
+    <td><strong>Monday</strong></td>
+    <td class="NSC">NSC</td>
+    <td class="Practical" colspan="2">Physics/Chemistry Practical</td>
+    <td class="Break">Break</td>
+    <td class="UBL">UBL</td>
+    <td class="PD">PD</td>
+    <td class="RL">RL</td>
+    <td class="RP">RP</td>
+  </tr>
+  <tr>
+    <td><strong>Tuesday</strong></td>
+    <td class="NK">NK</td>
+    <td class="SN">SN</td>
+    <td class="SC">SC</td>
+    <td class="Break">Break</td>
+    <td class="AKY">AKY</td>
+    <td class="PD">PD</td>
+    <td class="JP">JP</td>
+    <td class="RL">RL</td>
+  </tr>
+  <tr>
+    <td><strong>Wednesday</strong></td>
+    <td class="SN">SN</td>
+    <td class="Practical" colspan="2">Biology Practical</td>
+    <td class="Break">Break</td>
+    <td class="JNS">JNS</td>
+    <td class="TK">TK</td>
+    <td class="RP">RP</td>
+    <td class="SNM">SNM</td>
+  </tr>
+  <tr>
+    <td><strong>Thursday</strong></td>
+    <td class="SBZ">SBZ</td>
+    <td class="GS">GS</td>
+    <td class="SNC">SNC</td>
+    <td class="Break">Break</td>
+    <td class="TK">TK</td>
+    <td class="AS">AS</td>
+    <td class="AKM">AKM</td>
+    <td class="ND">ND</td>
+  </tr>
+  <tr>
+    <td><strong>Friday</strong></td>
+    <td class="GS">GS</td>
+    <td class="MD">MD</td>
+    <td class="SNC">SNC</td>
+    <td class="Break">Break</td>
+    <td class="SNM">SNM</td>
+    <td class="TK">TK</td>
+    <td class="KLB">KLB</td>
+    <td class="AS">AS</td>
+  </tr>
+</table>
+
+</body>
+</html>
